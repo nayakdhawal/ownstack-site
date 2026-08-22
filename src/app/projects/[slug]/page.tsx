@@ -78,16 +78,12 @@ export default async function ProjectPage({
             ))}
           </div>
 
-          <div className="mt-16 rounded-2xl border border-border bg-card p-8 text-center">
-            <h2 className="text-xl font-semibold">Want something like this?</h2>
-            <p className="mt-2 text-sm text-muted">
-              Tell me about your project and I&apos;ll tell you what it would take to build.
-            </p>
+          <div className="mt-16 border-t border-border pt-8">
             <Link
               href="/work-with-me"
-              className="mt-6 inline-flex rounded-full bg-accent px-6 py-3 text-sm font-medium text-accent-foreground transition hover:opacity-90"
+              className="text-sm text-accent transition hover:opacity-80"
             >
-              Work with me
+              Want something like this? Let&apos;s talk →
             </Link>
           </div>
         </section>
