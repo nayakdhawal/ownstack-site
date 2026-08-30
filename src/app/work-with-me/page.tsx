@@ -4,7 +4,7 @@ import { SiteFooter } from "@/components/site-footer";
 import { WorkWithMeForm } from "@/components/work-with-me-form";
 
 export const metadata: Metadata = {
-  title: "Work with me — CRUNCH",
+  title: "Work with me — Mico.",
   description: "Tell me about your project, budget, and timeline.",
 };
 

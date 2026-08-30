@@ -37,7 +37,7 @@ export function WorkWithMeForm() {
     const formData = new FormData(form);
     const payload = {
       access_key: process.env.NEXT_PUBLIC_WEB3FORMS_KEY ?? "",
-      subject: "New project inquiry from CRUNCH",
+      subject: "New project inquiry from Mico.",
       from_name: formData.get("name"),
       name: formData.get("name"),
       email: formData.get("email"),
