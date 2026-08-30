@@ -15,7 +15,7 @@ const instrumentSerif = Instrument_Serif({
 });
 
 export const metadata: Metadata = {
-  title: "Mico. — Micro apps you own, not rent",
+  title: "mico. — Micro apps you own, not rent",
   description:
     "Dhawal Nayak builds focused micro apps for small and medium businesses using AI-assisted development. Pay once, own the code, skip the subscriptions.",
 };
