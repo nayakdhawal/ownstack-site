@@ -18,7 +18,7 @@ export async function generateMetadata({
   const project = getProjectBySlug(slug);
   if (!project) return {};
   return {
-    title: `${project.title} — ownstack`,
+    title: `${project.title} — CRUNCH`,
     description: project.tagline,
   };
 }
@@ -35,38 +35,39 @@ export default async function ProjectPage({
   return (
     <div className="flex min-h-full flex-col">
       <SiteHeader />
-      <main className="flex-1">
-        <section className="mx-auto w-full max-w-4xl px-6 py-20 md:py-28">
-          <Link href="/#work" className="text-sm text-muted transition hover:text-accent">
+      <main className="mx-auto w-full max-w-[67.2rem] flex-1 px-4 py-8 md:px-8 md:py-10">
+        <section className="section-card px-6 py-16 md:px-12 md:py-20">
+          <Link
+            href="/#work"
+            className="text-sm font-medium text-muted transition hover:text-foreground"
+          >
             ← Back to work
           </Link>
 
-          <span className="mt-8 inline-block rounded-full border border-border px-3 py-1 font-mono text-xs text-muted">
+          <span className="glass-card mt-8 inline-block rounded-full px-3 py-1 text-xs font-medium text-muted-2">
             Concept build — illustrative example
           </span>
 
-          <h1 className="mt-4 text-3xl font-semibold tracking-tight md:text-5xl">
-            {project.title}
-          </h1>
-          <p className="mt-4 max-w-2xl text-lg text-muted">{project.tagline}</p>
+          <h1 className="text-section-heading mt-4 text-foreground">{project.title}</h1>
+          <p className="text-body-loose mt-4 max-w-2xl text-muted">{project.tagline}</p>
 
           <div className="mt-6 flex flex-wrap gap-2">
             {project.tech.map((tech) => (
               <span
                 key={tech}
-                className="rounded-full border border-border px-3 py-1 font-mono text-xs text-muted"
+                className="rounded-full border border-border px-3 py-1 text-xs font-medium text-muted-2"
               >
                 {tech}
               </span>
             ))}
           </div>
 
-          <p className="mt-10 max-w-2xl text-muted">{project.summary}</p>
+          <p className="text-body-loose mt-10 max-w-2xl text-muted">{project.summary}</p>
 
           <ul className="mt-8 space-y-3">
             {project.highlights.map((highlight) => (
-              <li key={highlight} className="flex gap-3 text-sm">
-                <span className="text-accent">—</span>
+              <li key={highlight} className="flex gap-3 text-sm text-foreground">
+                <span className="text-muted-2">—</span>
                 <span>{highlight}</span>
               </li>
             ))}
@@ -81,7 +82,7 @@ export default async function ProjectPage({
           <div className="mt-16 border-t border-border pt-8">
             <Link
               href="/work-with-me"
-              className="text-sm text-accent transition hover:opacity-80"
+              className="text-sm font-semibold text-foreground transition hover:text-muted"
             >
               Want something like this? Let&apos;s talk →
             </Link>
