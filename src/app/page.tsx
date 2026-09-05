@@ -36,7 +36,7 @@ export default function Home() {
     <div className="flex flex-col">
       <SiteHeader />
 
-      <main className="mx-auto flex w-full max-w-[86.4rem] flex-col gap-4 px-4 py-4 md:px-8 md:py-6">
+      <main className="mx-auto flex w-full max-w-[104rem] flex-col gap-4 px-4 py-4 md:px-6 md:py-6">
         {/* Hero */}
         <section className="section-card flex min-h-[calc(100vh-7rem)] flex-col items-start justify-center px-6 py-16 text-left md:px-12 md:py-24">
           <p className="text-body-loose max-w-xl text-muted">

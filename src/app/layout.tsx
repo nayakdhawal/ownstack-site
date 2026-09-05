@@ -27,6 +27,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={`${inter.variable} ${instrumentSerif.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-background text-foreground font-sans font-medium">
+        <div className="dotted-canvas" aria-hidden="true" />
         {children}
       </body>
     </html>
