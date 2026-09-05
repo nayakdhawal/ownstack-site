@@ -35,7 +35,7 @@ export default async function ProjectPage({
   return (
     <div className="flex min-h-full flex-col">
       <SiteHeader />
-      <main className="mx-auto w-full max-w-[67.2rem] flex-1 px-4 py-8 md:px-8 md:py-10">
+      <main className="mx-auto w-full max-w-[80.9rem] flex-1 px-4 py-8 md:px-6 md:py-10">
         <section className="section-card px-6 py-16 md:px-12 md:py-20">
           <Link
             href="/#work"

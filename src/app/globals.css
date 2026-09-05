@@ -2,7 +2,7 @@
 
 :root {
   --page-canvas: #f6f5f2;
-  --dot-color: #d8d5cf;
+  --dot-color: #a85a4a;
   --background: #e0ded9;
   --foreground: #171717;
   --muted: #5c5c5c;
@@ -30,16 +30,23 @@
 
 body {
   background-color: var(--page-canvas);
-  background-image: radial-gradient(var(--dot-color) 1px, transparent 1px);
-  background-size: 22px 22px;
-  background-attachment: fixed;
   color: var(--foreground);
 }
 
+.dotted-canvas {
+  position: fixed;
+  inset: 0;
+  z-index: -10;
+  background-color: var(--page-canvas);
+  background-image: radial-gradient(var(--dot-color) 1px, transparent 1px);
+  background-size: 22px 22px;
+  pointer-events: none;
+}
+
 .section-card {
-  background: color-mix(in srgb, var(--background) 55%, transparent);
-  backdrop-filter: blur(28px) saturate(1.6);
-  -webkit-backdrop-filter: blur(28px) saturate(1.6);
+  background: color-mix(in srgb, var(--background) 88%, transparent);
+  backdrop-filter: blur(28px) saturate(1.2);
+  -webkit-backdrop-filter: blur(28px) saturate(1.2);
   border: 1px solid color-mix(in srgb, var(--foreground) 8%, transparent);
   border-radius: 32px;
   box-shadow:
@@ -93,9 +100,9 @@ body {
 }
 
 .glass {
-  background: color-mix(in srgb, var(--background) 55%, transparent);
-  backdrop-filter: blur(20px) saturate(1.5);
-  -webkit-backdrop-filter: blur(20px) saturate(1.5);
+  background: color-mix(in srgb, var(--background) 88%, transparent);
+  backdrop-filter: blur(20px) saturate(1.2);
+  -webkit-backdrop-filter: blur(20px) saturate(1.2);
   border: 1px solid color-mix(in srgb, var(--foreground) 8%, transparent);
   box-shadow:
     inset 0 1px 0 rgba(255, 255, 255, 0.5),
@@ -103,9 +110,9 @@ body {
 }
 
 .glass-card {
-  background: color-mix(in srgb, var(--card) 50%, transparent);
-  backdrop-filter: blur(18px) saturate(1.5);
-  -webkit-backdrop-filter: blur(18px) saturate(1.5);
+  background: color-mix(in srgb, var(--card) 88%, transparent);
+  backdrop-filter: blur(18px) saturate(1.2);
+  -webkit-backdrop-filter: blur(18px) saturate(1.2);
   border: 1px solid color-mix(in srgb, var(--foreground) 8%, transparent);
   box-shadow:
     0 8px 24px -12px rgba(23, 23, 23, 0.18),

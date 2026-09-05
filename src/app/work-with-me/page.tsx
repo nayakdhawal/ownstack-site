@@ -12,7 +12,7 @@ export default function WorkWithMePage() {
   return (
     <div className="flex min-h-full flex-col">
       <SiteHeader />
-      <main className="mx-auto w-full max-w-[50.4rem] flex-1 px-4 py-8 md:px-8 md:py-10">
+      <main className="mx-auto w-full max-w-[60.7rem] flex-1 px-4 py-8 md:px-6 md:py-10">
         <section className="section-card px-6 py-16 md:px-12 md:py-20">
           <h1 className="text-section-heading text-foreground">
             Tell me about your project.
